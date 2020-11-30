@@ -1,0 +1,183 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "WebInspector",
+      "version": "537.36"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2020-11-30T16:45:27.147Z",
+        "id": "page_4",
+        "title": "https://jsonplaceholder.typicode.com/comments?postId=1",
+        "pageTimings": {
+          "onContentLoad": 27.285000018309802,
+          "onLoad": 56.18200000026263
+        }
+      }
+    ],
+    "entries": [
+      {
+        "_fromCache": "disk",
+        "_initiator": {
+          "type": "other"
+        },
+        "_priority": "VeryHigh",
+        "_resourceType": "document",
+        "cache": {},
+        "pageref": "page_4",
+        "request": {
+          "method": "GET",
+          "url": "https://jsonplaceholder.typicode.com/comments?postId=1",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "sec-ch-ua",
+              "value": "\"Google Chrome\";v=\"87\", \"\\\"Not;A\\\\Brand\";v=\"99\", \"Chromium\";v=\"87\""
+            },
+            {
+              "name": "sec-ch-ua-mobile",
+              "value": "?1"
+            },
+            {
+              "name": "Upgrade-Insecure-Requests",
+              "value": "1"
+            },
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Mobile Safari/537.36"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "postId",
+              "value": "1"
+            }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "",
+          "httpVersion": "http/2.0",
+          "headers": [
+            {
+              "name": "date",
+              "value": "Mon, 30 Nov 2020 16:45:14 GMT"
+            },
+            {
+              "name": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "name": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "name": "x-ratelimit-limit",
+              "value": "1000"
+            },
+            {
+              "name": "x-ratelimit-remaining",
+              "value": "994"
+            },
+            {
+              "name": "x-ratelimit-reset",
+              "value": "1606514953"
+            },
+            {
+              "name": "vary",
+              "value": "Origin, Accept-Encoding"
+            },
+            {
+              "name": "access-control-allow-credentials",
+              "value": "true"
+            },
+            {
+              "name": "cache-control",
+              "value": "max-age=43200"
+            },
+            {
+              "name": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "name": "expires",
+              "value": "-1"
+            },
+            {
+              "name": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "name": "etag",
+              "value": "W/\"5e6-4bSPS5tq8F8ZDeFJULWh6upjp7U\""
+            },
+            {
+              "name": "via",
+              "value": "1.1 vegur"
+            },
+            {
+              "name": "cf-cache-status",
+              "value": "REVALIDATED"
+            },
+            {
+              "name": "cf-request-id",
+              "value": "06bba458c200002de3a6b35000000001"
+            },
+            {
+              "name": "expect-ct",
+              "value": "max-age=604800, report-uri=\"https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct\""
+            },
+            {
+              "name": "report-to",
+              "value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report?s=dATrN2VwOzuoFuJ4T%2Fnhqix8Tc%2Bz9%2FcQLBILTKyCtjtnvLBJPHpJM3K1fCmsPF%2FwMtKa2rPBzJSOY4VGoOtAV%2F7IQbtZdSt0FW2rdomSwW7A186fgCva5gWhEZ6P\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+            },
+            {
+              "name": "nel",
+              "value": "{\"report_to\":\"cf-nel\",\"max_age\":604800}"
+            },
+            {
+              "name": "server",
+              "value": "cloudflare"
+            },
+            {
+              "name": "cf-ray",
+              "value": "5fa609a13c652de3-DME"
+            },
+            {
+              "name": "content-encoding",
+              "value": "br"
+            }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 1510,
+            "mimeType": "application/json",
+            "text": "[\n  {\n    \"postId\": 1,\n    \"id\": 1,\n    \"name\": \"id labore ex et quam laborum\",\n    \"email\": \"Eliseo@gardner.biz\",\n    \"body\": \"laudantium enim quasi est quidem magnam voluptate ipsam eos\\ntempora quo necessitatibus\\ndolor quam autem quasi\\nreiciendis et nam sapiente accusantium\"\n  },\n  {\n    \"postId\": 1,\n    \"id\": 2,\n    \"name\": \"quo vero reiciendis velit similique earum\",\n    \"email\": \"Jayne_Kuhic@sydney.com\",\n    \"body\": \"est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et\"\n  },\n  {\n    \"postId\": 1,\n    \"id\": 3,\n    \"name\": \"odio adipisci rerum aut animi\",\n    \"email\": \"Nikita@garfield.biz\",\n    \"body\": \"quia molestiae reprehenderit quasi aspernatur\\naut expedita occaecati aliquam eveniet laudantium\\nomnis quibusdam delectus saepe quia accusamus maiores nam est\\ncum et ducimus et vero voluptates excepturi deleniti ratione\"\n  },\n  {\n    \"postId\": 1,\n    \"id\": 4,\n    \"name\": \"alias odio sit\",\n    \"email\": \"Lew@alysha.tv\",\n    \"body\": \"non et atque\\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\\nquia voluptas consequuntur itaque dolor\\net qui rerum deleniti ut occaecati\"\n  },\n  {\n    \"postId\": 1,\n    \"id\": 5,\n    \"name\": \"vero eaque aliquid doloribus et culpa\",\n    \"email\": \"Hayden@althea.biz\",\n    \"body\": \"harum non quasi et ratione\\ntempore iure ex voluptates in ratione\\nharum architecto fugit inventore cupiditate\\nvoluptates magni quo et\"\n  }\n]"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 0,
+          "_transferSize": 0,
+          "_error": null
+        },
+        "serverIPAddress": "172.64.135.35",
+        "startedDateTime": "2020-11-30T16:45:27.143Z",
+        "time": 4.424999991897494,
+        "timings": {
+          "blocked": 3.5979999949932098,
+          "dns": -1,
+          "ssl": -1,
+          "connect": -1,
+          "send": 0,
+          "wait": 0.34499999380111696,
+          "receive": 0.4820000031031668,
+          "_blocked_queueing": 3.42399999499321
+        }
+      }
+    ]
+  }
+}
