@@ -1,4 +1,4 @@
-A library that helps in reading '.har' (archival format for HTTP transactions) data.
+A library that helps in reading/writing '.har' (archival format for HTTP transactions) data.
 
 ## Usage
 

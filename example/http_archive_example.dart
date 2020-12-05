@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:http_archive/http_archive.dart';
 
@@ -26,5 +27,6 @@ void main() {
   ''';
   final jsonMap = jsonDecode(harJsonContentString) as Map<String, dynamic>;
   final harRoot = HarRoot.fromJson(jsonMap);
-  print('Response text: ${harRoot.log.entries[0].response.content.text}');
+  stdout.writeln(
+      'Response text: ${harRoot.log.entries[0].response.content.text}');
 }
