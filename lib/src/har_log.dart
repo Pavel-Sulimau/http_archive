@@ -1,14 +1,13 @@
 import 'package:equatable/equatable.dart';
 import 'package:http_archive/http_archive.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:meta/meta.dart';
 
 part 'har_log.g.dart';
 
 @JsonSerializable()
 class HarLog extends Equatable {
   const HarLog({
-    @required this.entries,
+    required this.entries,
   });
 
   factory HarLog.fromJson(Map<String, dynamic> json) => _$HarLogFromJson(json);
@@ -18,5 +17,5 @@ class HarLog extends Equatable {
   Map<String, dynamic> toJson() => _$HarLogToJson(this);
 
   @override
-  List<Object> get props => [entries];
+  List<Object?> get props => [entries];
 }

@@ -8,10 +8,9 @@ part of 'har_log.dart';
 
 HarLog _$HarLogFromJson(Map<String, dynamic> json) {
   return HarLog(
-    entries: (json['entries'] as List)
-        ?.map((e) =>
-            e == null ? null : HarEntry.fromJson(e as Map<String, dynamic>))
-        ?.toList(),
+    entries: (json['entries'] as List<dynamic>)
+        .map((e) => HarEntry.fromJson(e as Map<String, dynamic>))
+        .toList(),
   );
 }
 

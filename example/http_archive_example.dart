@@ -27,6 +27,5 @@ void main() {
   ''';
   final jsonMap = jsonDecode(harJsonContentString) as Map<String, dynamic>;
   final harRoot = HarRoot.fromJson(jsonMap);
-  stdout.writeln(
-      'Response text: ${harRoot.log.entries[0].response.content.text}');
+  stdout.writeln('Response text: ${harRoot.log.entries[0].response.content.text}');
 }

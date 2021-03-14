@@ -8,9 +8,7 @@ part of 'har_root.dart';
 
 HarRoot _$HarRootFromJson(Map<String, dynamic> json) {
   return HarRoot(
-    log: json['log'] == null
-        ? null
-        : HarLog.fromJson(json['log'] as Map<String, dynamic>),
+    log: HarLog.fromJson(json['log'] as Map<String, dynamic>),
   );
 }
 

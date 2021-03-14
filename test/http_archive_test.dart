@@ -33,8 +33,8 @@ void main() {
           'test/resources/jsonplaceholder_get_todos_1.har.json');
       final harRequest = harRoot.log.entries[0].request;
 
-      expect(harRequest.headers.length, equals(16));
-      final lastHeader = harRequest.headers[15];
+      expect(harRequest.headers!.length, equals(16));
+      final lastHeader = harRequest.headers![15];
       expect(lastHeader.name, equals('accept-language'));
       expect(lastHeader.value, equals('en-US,en;q=0.9,ru;q=0.8'));
     });
@@ -51,7 +51,7 @@ void main() {
   });
 
   group('Har response', () {
-    HarResponse _harResponse;
+    late HarResponse _harResponse;
 
     setUpAll(() async {
       final harRoot = await _createHarRootFromFile(

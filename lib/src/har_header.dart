@@ -1,14 +1,13 @@
 import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:meta/meta.dart';
 
 part 'har_header.g.dart';
 
 @JsonSerializable()
 class HarHeader extends Equatable {
   const HarHeader({
-    @required this.name,
-    @required this.value,
+    required this.name,
+    required this.value,
   });
 
   factory HarHeader.fromJson(Map<String, dynamic> json) =>
@@ -20,5 +19,5 @@ class HarHeader extends Equatable {
   Map<String, dynamic> toJson() => _$HarHeaderToJson(this);
 
   @override
-  List<Object> get props => [name, value];
+  List<Object?> get props => [name, value];
 }

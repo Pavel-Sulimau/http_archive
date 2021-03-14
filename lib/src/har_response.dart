@@ -1,8 +1,5 @@
-import 'dart:io';
-
 import 'package:equatable/equatable.dart';
 import 'package:json_annotation/json_annotation.dart';
-import 'package:meta/meta.dart';
 
 import 'har_header.dart';
 import 'har_response_content.dart';
@@ -12,9 +9,9 @@ part 'har_response.g.dart';
 @JsonSerializable()
 class HarResponse extends Equatable {
   const HarResponse({
-    this.status = HttpStatus.ok,
-    @required this.content,
-    this.headers,
+    required this.status,
+    required this.content,
+    required this.headers,
   });
 
   factory HarResponse.fromJson(Map<String, dynamic> json) =>
@@ -27,5 +24,5 @@ class HarResponse extends Equatable {
   Map<String, dynamic> toJson() => _$HarResponseToJson(this);
 
   @override
-  List<Object> get props => [status, content, headers];
+  List<Object?> get props => [status, content, headers];
 }
