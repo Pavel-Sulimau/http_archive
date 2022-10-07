@@ -10,7 +10,9 @@ HarEntry _$HarEntryFromJson(Map<String, dynamic> json) {
   return HarEntry(
     startedDateTime: DateTime.parse(json['startedDateTime'] as String),
     request: HarRequest.fromJson(json['request'] as Map<String, dynamic>),
-    response: HarResponse.fromJson(json['response'] as Map<String, dynamic>),
+    response: json['response'] == null
+        ? null
+        : HarResponse.fromJson(json['response'] as Map<String, dynamic>),
   );
 }
 

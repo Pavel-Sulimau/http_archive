@@ -10,8 +10,8 @@ HarRequest _$HarRequestFromJson(Map<String, dynamic> json) {
   return HarRequest(
     method: json['method'] as String,
     url: json['url'] as String,
-    headers: (json['headers'] as List<dynamic>)
-        .map((e) => HarHeader.fromJson(e as Map<String, dynamic>))
+    headers: (json['headers'] as List<dynamic>?)
+        ?.map((e) => HarHeader.fromJson(e as Map<String, dynamic>))
         .toList(),
   );
 }
