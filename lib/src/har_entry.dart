@@ -18,7 +18,7 @@ class HarEntry extends Equatable {
 
   final DateTime startedDateTime;
   final HarRequest request;
-  final HarResponse response;
+  final HarResponse? response;
 
   Map<String, dynamic> toJson() => _$HarEntryToJson(this);
 
